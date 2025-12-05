@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mindo OTP User Consent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.25rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.5;
+      margin: 0.25rem 0;
+    }
+    ul {
+      padding-left: 1.25rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      margin-top: 16px;
+      border: 1px solid #e5e7eb;
+    }
+    .screenshot {
+      margin-top: 16px;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+    .code-sample {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: #111827;
+      color: #e5e7eb;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>Mindo OTP User Consent</h1>
+    <p>
+      This page describes how users of the <strong>Mindo</strong> mobile application
+      give consent to receive one-time SMS verification codes from our toll-free number.
+    </p>
+
+    <div class="card">
+      <h2>How users opt in</h2>
+      <p>
+        Within the Mindo app, users navigate to the authentication screen labeled
+        <strong>"Continue with Email or Phone"</strong>.
+      </p>
+      <p>
+        On this screen, users manually enter their own mobile phone number into a text field
+        and then tap the <strong>"Next"</strong> button. By tapping this button, the user is
+        explicitly requesting that we send a one-time verification code (OTP) by SMS to the
+        phone number they provided.
+      </p>
+      <p>
+        This action serves as <strong>clear, user-initiated consent</strong> to receive an SMS
+        solely for the purpose of logging in or creating an account. We do not send marketing or
+        promotional messages from this number.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Messaging use case</h2>
+      <ul>
+        <li>Purpose: account authentication / login (one-time passcodes).</li>
+        <li>Message type: transactional, user-initiated OTP only.</li>
+        <li>No bulk messaging, campaigns, or marketing content.</li>
+      </ul>
+
+      <h2>Opt-out and help</h2>
+      <p>
+        Our SMS messages clearly inform users that they can reply
+        <strong>"STOP"</strong> to opt out of further messages and
+        <strong>"HELP"</strong> for assistance. Twilio's standard STOP/HELP handling
+        is supported on this toll-free number.
+      </p>
+
+      <h2>Example OTP message</h2>
+      <div class="code-sample">
+        Your Mindo verification code is 123456. It expires in 10 minutes.
+        Reply HELP for help, STOP to opt out.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Screenshot of the consent screen</h2>
+      <p>
+        The screenshot below shows the in-app screen where users enter their phone number and
+        tap "Next" to request a one-time verification code:
+      </p>
+      <div class="screenshot">
+        <img
+          src="YOUR_SCREENSHOT_URL_HERE"
+          alt="Mindo mobile app screen: user enters phone number and taps Next to request an OTP code"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
